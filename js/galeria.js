@@ -4,7 +4,8 @@ const FOTOS = [
   { seed: 'equipo2', alt: 'Reunión de planeación' },
   { seed: 'servidores', alt: 'Sala de servidores' },
   { seed: 'evento', alt: 'Evento tecnológico' },
-  { seed: 'codigo', alt: 'Sesión de programación' }
+  { seed: 'codigo', alt: 'Sesión de programación' },
+  { seed: 'cliente', alt: 'Reunión con cliente' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
