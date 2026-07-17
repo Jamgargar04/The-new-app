@@ -53,3 +53,58 @@ async function buscarClima(ciudad) {
     codigo: climaData.current_weather.weathercode
   };
 }
+
+const session = requireSession();
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderNavbar(session, 'clima');
+  document.getElementById('form-clima').addEventListener('submit', handleBuscar);
+  cargarClima('Ciudad de México');
+});
+
+function handleBuscar(e) {
+  e.preventDefault();
+  const ciudad = document.getElementById('ciudad-input').value.trim();
+  if (ciudad) cargarClima(ciudad);
+}
+
+async function cargarClima(ciudad) {
+  const status = document.getElementById('clima-status');
+  const result = document.getElementById('clima-result');
+
+  status.style.display = 'block';
+  status.textContent = `Cargando clima de ${ciudad}...`;
+  result.style.display = 'none';
+
+  try {
+    const clima = await buscarClima(ciudad);
+    const estado = describirClima(clima.codigo);
+
+    result.innerHTML = `
+      <div class="clima-stat">
+        <div class="valor">${estado.icono}</div>
+        <div class="etiqueta">Ciudad</div>
+        <div>${clima.ciudad}${clima.pais ? ', ' + clima.pais : ''}</div>
+      </div>
+      <div class="clima-stat">
+        <div class="valor">${clima.temperatura}°C</div>
+        <div class="etiqueta">Temperatura</div>
+      </div>
+      <div class="clima-stat">
+        <div class="valor">${estado.texto}</div>
+        <div class="etiqueta">Estado del clima</div>
+      </div>
+      <div class="clima-stat">
+        <div class="valor">${clima.viento} km/h</div>
+        <div class="etiqueta">Velocidad del viento</div>
+      </div>
+    `;
+
+    status.style.display = 'none';
+    result.style.display = 'grid';
+  } catch (err) {
+    result.style.display = 'none';
+    status.style.display = 'block';
+    status.textContent = `No se pudo obtener el clima de "${ciudad}". Verifica el nombre e intenta de nuevo.`;
+  }
+}
