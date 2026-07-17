@@ -60,6 +60,7 @@ function renderNavbar(session, activePage) {
       ${link('productos.html', 'Productos', 'productos')}
       ${link('usuarios.html', 'Usuarios (API)', 'usuarios')}
       ${link('clima.html', 'Clima (API)', 'clima')}
+      ${link('contacto.html', 'Contacto', 'contacto')}
     </div>
     <div class="nav-user">
       <span>${session.nombre} <span class="badge">${session.role}</span></span>
