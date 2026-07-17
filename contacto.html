@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCorp - Contacto</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar"></nav>
+
+  <div class="page-container">
+    <div class="page-header">
+      <div>
+        <h1>Contacto</h1>
+        <p>¿Tienes dudas o quieres cotizar un proyecto? Escríbenos.</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <div class="about-block">
+          <h3>📍 Oficina</h3>
+          <p>Av. Central 123, Ciudad de México, México.</p>
+        </div>
+        <div class="about-block">
+          <h3>📞 Teléfono</h3>
+          <p>+52 55 1234 5678</p>
+        </div>
+        <div class="about-block">
+          <h3>✉️ Correo</h3>
+          <p>contacto@techcorp.com</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="error-msg" id="contacto-ok" style="display:none; background:#f0fdf4; color:#166534; border-color:#bbf7d0;">
+          ¡Gracias! Tu mensaje fue enviado correctamente.
+        </div>
+        <form id="form-contacto">
+          <div class="field">
+            <label for="c-nombre">Nombre</label>
+            <input type="text" id="c-nombre" required>
+          </div>
+          <div class="field">
+            <label for="c-correo">Correo</label>
+            <input type="email" id="c-correo" required>
+          </div>
+          <div class="field">
+            <label for="c-mensaje">Mensaje</label>
+            <textarea id="c-mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 TechCorp — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>
