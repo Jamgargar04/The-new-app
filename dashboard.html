@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCorp - Inicio</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar"></nav>
+
+  <div class="page-container">
+    <div class="page-header">
+      <div>
+        <h1 id="saludo">Bienvenido</h1>
+        <p>Selecciona una opción para comenzar.</p>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+      <a class="menu-card" href="productos.html">
+        <div class="icon">📦</div>
+        <h3>Productos y Servicios</h3>
+        <p>Administra el catálogo de productos y servicios de la empresa (CRUD).</p>
+      </a>
+      <a class="menu-card" href="usuarios.html">
+        <div class="icon">🌐</div>
+        <h3>Usuarios (API)</h3>
+        <p>Consulta usuarios de ejemplo obtenidos desde una API pública.</p>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script>
+    const session = requireSession();
+    if (session) {
+      renderNavbar(session, 'dashboard');
+      document.getElementById('saludo').textContent = `Hola, ${session.nombre} 👋`;
+    }
+  </script>
+</body>
+</html>
