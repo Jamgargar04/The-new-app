@@ -25,6 +25,8 @@ API pública.
   [Open-Meteo](https://open-meteo.com/) (geocoding + forecast) y muestra
   ciudad, temperatura, estado del clima y velocidad del viento para la ciudad
   que se busque.
+- **Contacto** (`contacto.html`): formulario de contacto (nombre, correo,
+  mensaje) que guarda los mensajes en `localStorage`.
 
 ## Cuentas de prueba
 
@@ -66,6 +68,16 @@ http://localhost/new-app/
   productos, consumo de API de usuarios).
 - `wmunny02-dev`: rama de trabajo de Jorge Israel Aguilera Rueda (Nosotros,
   Galería de Fotos, consumo de API de clima).
+- `LizetDelCarmenMartinezVera-dev`: rama de trabajo de Lizet Del Carmen
+  Martinez Vera (página de Contacto y pulido final de la versión estable).
+
+### Conflicto simulado (Fase 5)
+
+Se generó un conflicto real modificando el mismo bloque de `contacto.html`
+desde dos ramas distintas (`conflicto-lizet-contacto` y
+`conflicto-jamgargar04-contacto`). El conflicto, su resolución y el resultado
+final quedaron documentados en
+[`docs/evidencia-conflicto.md`](docs/evidencia-conflicto.md).
 
 Cada integrante trabaja en su propia rama y solicita un *Pull Request* hacia
 `main`. El administrador del repositorio revisa e integra los cambios.
