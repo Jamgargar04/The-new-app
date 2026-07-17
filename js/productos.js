@@ -29,6 +29,7 @@ function renderProductos() {
 
   grid.innerHTML = productos.map(p => `
     <div class="card">
+      <img class="card-img" src="https://picsum.photos/seed/${encodeURIComponent(p.nombre)}/300/160" alt="${escapeHtml(p.nombre)}" loading="lazy">
       <div class="icon">${p.icono || '📦'}</div>
       <h3>${escapeHtml(p.nombre)}</h3>
       <p>${escapeHtml(p.descripcion)}</p>
