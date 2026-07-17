@@ -12,7 +12,8 @@ function handleEnviar(e) {
   mensajesRepo.create({
     nombre: document.getElementById('c-nombre').value.trim(),
     correo: document.getElementById('c-correo').value.trim(),
-    mensaje: document.getElementById('c-mensaje').value.trim()
+    mensaje: document.getElementById('c-mensaje').value.trim(),
+    fecha: new Date().toISOString()
   });
 
   document.getElementById('form-contacto').reset();
