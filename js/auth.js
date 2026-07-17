@@ -55,8 +55,11 @@ function renderNavbar(session, activePage) {
     <div class="nav-brand">🛠️ TechCorp</div>
     <div class="nav-links">
       ${link('dashboard.html', 'Inicio', 'dashboard')}
+      ${link('nosotros.html', 'Nosotros', 'nosotros')}
+      ${link('galeria.html', 'Galería', 'galeria')}
       ${link('productos.html', 'Productos', 'productos')}
       ${link('usuarios.html', 'Usuarios (API)', 'usuarios')}
+      ${link('clima.html', 'Clima (API)', 'clima')}
     </div>
     <div class="nav-user">
       <span>${session.nombre} <span class="badge">${session.role}</span></span>
