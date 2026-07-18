@@ -23,11 +23,14 @@ Práctica 3er Parcial: Desarrollo Colaborativo con Git y GitHub, pruebas y despl
 
 | Autor | Commits en `main` |
 |---|---|
-| Jamgargar04 (Jose) | 13 |
+| Jose Jamin Garcia Garcia (`Jamgargar04`) | 14 |
 | Jorge Israel Aguilera Rueda | 12 |
 | Lizet Del Carmen Martinez Vera | 6 |
-| Jose Jamin Garcia Garcia (commit de resolución de conflicto) | 1 |
 | **Total** | **32** |
+
+> Nota: `Jamgargar04` es el usuario de GitHub de Jose Jamin Garcia Garcia; ambos
+> nombres corresponden a la misma persona (incluye el commit de resolución del
+> conflicto, hecho con su identidad de administrador del repositorio).
 
 Todos los commits tienen mensajes descriptivos con prefijo por tipo
 (`feat`, `fix`, `style`, `docs`) y por página (ej. `feat(clima): ...`).
