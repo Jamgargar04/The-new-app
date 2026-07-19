@@ -11,13 +11,20 @@ API pública.
 - **Roles**:
   - `admin` → acceso completo al CRUD de Productos y Servicios.
   - `usuario` → solo puede consultar (modo lectura).
-- **Dashboard** (`dashboard.html`): menú principal con acceso a las secciones.
+- **Dashboard / Inicio** (`dashboard.html`): imagen de portada, texto de
+  bienvenida, menú principal y pie de página.
+- **Nosotros** (`nosotros.html`): historia, misión, visión e imagen representativa.
+- **Galería de Fotos** (`galeria.html`): grid de imágenes de ejemplo.
 - **Productos y Servicios** (`productos.html`): CRUD completo (crear, editar,
   eliminar, listar) persistido en `localStorage`, usando el patrón *Repository*
   (`js/storage.js`).
 - **Usuarios (API)** (`usuarios.html`): consume
   [`jsonplaceholder.typicode.com/users`](https://jsonplaceholder.typicode.com/users)
   y muestra nombre, correo, ciudad y empresa.
+- **Clima (API)** (`clima.html`): consume la API pública de
+  [Open-Meteo](https://open-meteo.com/) (geocoding + forecast) y muestra
+  ciudad, temperatura, estado del clima y velocidad del viento para la ciudad
+  que se busque.
 
 ## Cuentas de prueba
 
@@ -56,8 +63,9 @@ http://localhost/new-app/
 
 - `main`: rama estable/protegida. Nadie desarrolla directamente aquí.
 - `jamgargar04-dev`: rama de trabajo de Jose Jamin Garcia Garcia (login, dashboard,
-  productos, consumo de API).
-- `jorge-dev`: rama de trabajo de Jorge Israel Aguilera Rueda.
+  productos, consumo de API de usuarios).
+- `wmunny02-dev`: rama de trabajo de Jorge Israel Aguilera Rueda (Nosotros,
+  Galería de Fotos, consumo de API de clima).
 
 Cada integrante trabaja en su propia rama y solicita un *Pull Request* hacia
 `main`. El administrador del repositorio revisa e integra los cambios.

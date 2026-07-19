@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCorp - Clima</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar"></nav>
+
+  <div class="page-container">
+    <div class="page-header">
+      <div>
+        <h1>Clima</h1>
+        <p>Consulta el clima actual de cualquier ciudad (datos de Open-Meteo).</p>
+      </div>
+    </div>
+
+    <form class="clima-search" id="form-clima">
+      <input type="text" id="ciudad-input" placeholder="Escribe una ciudad, ej. Ciudad de México" required>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+
+    <p class="status-msg" id="clima-status">Cargando clima de Ciudad de México...</p>
+    <div class="clima-result" id="clima-result" style="display:none;"></div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 TechCorp — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/clima.js"></script>
+</body>
+</html>

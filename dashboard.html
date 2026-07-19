@@ -10,15 +10,33 @@
 
   <nav class="navbar" id="navbar"></nav>
 
+  <div class="hero">
+    <img src="https://picsum.photos/seed/techcorp/1200/320" alt="TechCorp">
+    <div class="hero-text">
+      <h1>🛠️ TechCorp</h1>
+      <p id="saludo">Bienvenido</p>
+    </div>
+  </div>
+
   <div class="page-container">
     <div class="page-header">
       <div>
-        <h1 id="saludo">Bienvenido</h1>
+        <h2>Menú principal</h2>
         <p>Selecciona una opción para comenzar.</p>
       </div>
     </div>
 
     <div class="menu-grid">
+      <a class="menu-card" href="nosotros.html">
+        <div class="icon">🏢</div>
+        <h3>Nosotros</h3>
+        <p>Conoce nuestra historia, misión y visión.</p>
+      </a>
+      <a class="menu-card" href="galeria.html">
+        <div class="icon">🖼️</div>
+        <h3>Galería de Fotos</h3>
+        <p>Un vistazo visual a nuestro trabajo.</p>
+      </a>
       <a class="menu-card" href="productos.html">
         <div class="icon">📦</div>
         <h3>Productos y Servicios</h3>
@@ -29,8 +47,17 @@
         <h3>Usuarios (API)</h3>
         <p>Consulta usuarios de ejemplo obtenidos desde una API pública.</p>
       </a>
+      <a class="menu-card" href="clima.html">
+        <div class="icon">🌤️</div>
+        <h3>Clima (API)</h3>
+        <p>Consulta el clima actual de cualquier ciudad en tiempo real.</p>
+      </a>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <p>© 2026 TechCorp — Todos los derechos reservados.</p>
+  </footer>
 
   <script src="js/auth.js"></script>
   <script>

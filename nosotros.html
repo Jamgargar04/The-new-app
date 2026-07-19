@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCorp - Nosotros</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar"></nav>
+
+  <div class="page-container">
+    <div class="page-header">
+      <div>
+        <h1>Nosotros</h1>
+        <p>Quiénes somos y hacia dónde vamos.</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <img src="https://picsum.photos/seed/nosotros/600/500" alt="Equipo de TechCorp" loading="lazy">
+
+      <div>
+        <div class="about-block">
+          <h3>📜 Historia</h3>
+          <p>TechCorp nació en 2016 como un pequeño equipo de tres desarrolladores con la
+          idea de ayudar a pequeñas empresas a dar el salto al mundo digital. Con el tiempo
+          crecimos hasta convertirnos en una empresa de desarrollo de software y consultoría
+          tecnológica con clientes en toda la región.</p>
+        </div>
+        <div class="about-block">
+          <h3>🎯 Misión</h3>
+          <p>Brindar soluciones tecnológicas simples, confiables y accesibles que permitan a
+          nuestros clientes crecer y competir en un mundo digital.</p>
+        </div>
+        <div class="about-block">
+          <h3>🔭 Visión</h3>
+          <p>Ser la empresa de referencia en desarrollo web y consultoría TI, reconocida por
+          la calidad de nuestro trabajo y el compromiso con nuestros clientes.</p>
+        </div>
+        <div class="about-block">
+          <h3>💡 Nuestros valores</h3>
+          <p>Compromiso, transparencia y mejora continua guían cada proyecto que entregamos
+          a nuestros clientes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 TechCorp — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script>
+    const session = requireSession();
+    if (session) renderNavbar(session, 'nosotros');
+  </script>
+</body>
+</html>
