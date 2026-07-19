@@ -54,8 +54,18 @@ http://localhost/new-app/
 
 ## Flujo de Git del equipo
 
-- `main`: rama estable/protegida.
-- `jamgargar04-*`: ramas de trabajo de Jose Jamin Garcia Garcia.
-- `jorge-*`: ramas de trabajo de Jorge Israel Aguilera Rueda.
+- `main`: rama estable/protegida. Nadie desarrolla directamente aquí.
+- `jamgargar04-dev`: rama de trabajo de Jose Jamin Garcia Garcia (login, dashboard,
+  productos, consumo de API).
+- `jorge-dev`: rama de trabajo de Jorge Israel Aguilera Rueda.
 
-Cada integrante trabaja en su propia rama y hace *pull request* hacia `main`.
+Cada integrante trabaja en su propia rama y solicita un *Pull Request* hacia
+`main`. El administrador del repositorio revisa e integra los cambios.
+
+## Publicación (GitHub Pages)
+
+Al ser un sitio 100% estático, se puede publicar gratis con GitHub Pages:
+
+1. Settings → Pages → Source: rama `main`, carpeta `/ (root)`.
+2. La URL pública quedará como
+   `https://jamgargar04.github.io/The-new-app/`.
